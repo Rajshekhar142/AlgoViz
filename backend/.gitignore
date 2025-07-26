@@ -1,0 +1,79 @@
+# Node.js
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.npm/_logs/
+.nyc_output/
+.temp/
+
+# Node.js folders
+node_modules/
+jspm_packages/
+
+# Production build files
+/dist
+/build
+.next/ # Next.js build output
+.nuxt/ # Nuxt.js build output
+.sapper/ # Sapper build output
+.vite/ # Vite build output
+.cache/ # General cache folder
+
+# Dependency directories for specific package managers
+/pnpm-lock.yaml # If using pnpm
+/yarn.lock # If using yarn
+/package-lock.json # If using npm (often committed, but if you want to ignore)
+
+# Optional: if you don't commit package-lock.json or yarn.lock
+# package-lock.json
+# yarn.lock
+
+# Editor directories and files
+.idea/ # IntelliJ IDEA
+.vscode/ # VS Code
+*.iml # IntelliJ IDEA modules
+.project # Eclipse
+.settings/ # Eclipse
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+.env*.js # React Native specific
+
+# Editor-specific
+*.sublime-project
+*.sublime-workspace
+
+# Testing frameworks
+/coverage
+
+# TypeScript output
+*.tsbuildinfo
+
+# Prisma
+/prisma/migrations # If you generate migration files
+
+# Other common temporary files
+*.tmp
+*.swp
+*.bak
+~*
+
+# Docker
+Dockerfile.bak
+.dockerignore
+!docker-compose.yml # Usually kept, but sometimes ignored
+# GIT_AUTHOR_NAME="Your Secondary Name" GIT_AUTHOR_EMAIL="secondary.email@example.com" git add .
+# GIT_AUTHOR_NAME="Your Secondary Name" GIT_AUTHOR_EMAIL="secondary.email@example.com" git commit -m "Secondary User: Made some other changes"

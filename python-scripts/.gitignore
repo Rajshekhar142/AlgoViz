@@ -1,0 +1,61 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual Environment
+# This is the most important part for Python projects with venvs
+/venv/
+.venv/
+env/
+.env/
+# Add other common virtual environment names if you use them, e.g.,
+# myenv/
+# .conda/ # If using Miniconda/Anaconda for environments
+
+# Logs
+*.log
+
+# Editor directories and files
+.idea/ # IntelliJ IDEA/PyCharm
+.vscode/ # VS Code
+*.iml # IntelliJ IDEA modules
+.project # Eclipse
+.settings/ # Eclipse
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Environment variables (similar to Node.js, for config files)
+.env
+.env.local
+
+# Database files
+*.sqlite3
+*.db.sqlite3
+
+# Test / coverage reports
+/htmlcov/
+/.coverage
+/.cache/
+
+# Distribution / packaging
+/dist/
+/build/
+*.egg
+*.whl
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Miscellaneous
+.pytest_cache/
+*.mypy_cache/
+Pipfile.lock # If using Pipenv and want to ignore (often committed)
+poetry.lock # If using Poetry and want to ignore (often committed)
