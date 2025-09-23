@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #main {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script>
+      // echarts.init... with the dom element that has to store the graph..
+      var myChart = echarts.init(document.getElementById('main'));
+      /*var myChart = echarts.init(document.getElementById('main'));
+      var option = {
+        // an object.. key xAxis(an object key: data type array) , yAxis simple object , series array of objects...
+        xAxis:{
+          data:['01-02-2025' , '03-02-2025' , '05-02-2025' , '07-02-2025']
+        },
+        yAxis:{},
+        series:[
+        {
+          type:'candlestick',
+          data: [
+          [140 , 160 , 128 , 166],[100 , 80 , 66 , 100],[120 , 105 , 100 , 120 ],[100 , 140 , 100 , 140]
+          ]
+        }
+        
+        ]*/
+      var option = {
+                 xAxis: {
+           data: ['2017-10-24', '2017-10-25', '2017-10-26', '2017-10-27'],
+        },
+        yAxis: {},
+        series: [
+          {
+            type: 'candlestick',
+            data: [
+            [20,34, 10,38], //[open,close , low ,high]
+            [40,35,30,50],
+            [31,38,33,44],
+            [38,15,5,42]
+            ],
+            itemStyle: {
+              color: '#00da3c',     // bearish: open > close → now GREEN
+              color0: '#ec0000',    // bullish: close > open → now RED
+              borderColor: '#008F28',
+              borderColor0: '#8A0000'
+} 
+          }
+        ],
+
+      }
+        
+        // key xAxis , yAxis , series 
+        // xAxis a object 
+        // data a key taking array
+        // yAxis a object 
+        // series ; an array of object
+        // one such objects...
+        // key type: value -> candlestick 
+        // data : an array of arrays
+        // storing in format representing open , close , low and high
+        // finally applying options object to myChart using .setOption method with option as param.
+
+      //myChart.setOption(option);
+      myChart.setOption(option);
+    </script>
+
+</body>
+</html>

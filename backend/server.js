@@ -38,21 +38,6 @@ app.get('/', (req,res)=> {
     res.send("AlgoBacktester Backend is running.");
 })
 
-app.get('/api/historical-data/:symbol', async(req,res)=>{
-    const {symbol} = req.params;
-    try{
-        const result = await pool.query(
-            `SELECT date , open , high , low , close , volume FROM daily_prices WHERE symbol = $1 ORDER BY date ASC`,[symbol.toUpperCase()]
-        );
-        res.json(result.rows);
-    } catch(err){
-        console.error('Error fetching historical data:' , err);
-        res.status(500).json({
-            error: 'Failed to fetch historical data'
-        })
-    }
-})
-
 
 
 app.listen(port,()=>{
