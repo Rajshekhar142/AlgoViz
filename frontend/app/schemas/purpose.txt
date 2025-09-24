@@ -1,0 +1,5 @@
+the mongoose schema is backend modeling and verification now are on 
+frontend here we have to check which type of schema we need and what user 
+is providing .. at current i have taken 3 each with its purpose verifySchema is to 
+check that there remains consistency in formats b/w frontend and backend , but its 
+just intro u have to customize this part again for algoviz
